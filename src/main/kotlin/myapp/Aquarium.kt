@@ -1,13 +1,13 @@
 package myapp
 
-class Aquarium {
-    var lebar : Int = 20
-    var tinggi : Int = 40
-    var panjang : Int = 100
+class Aquarium(lebar : Int=30, tinggi: Int= 60, panjang : Int = 120) {
+    var lebar : Int = lebar
+    var tinggi : Int = tinggi
+    var panjang : Int = panjang
 
     fun printSize(){
-        println("lebar: $lebar cm"+
-                "tinggi : $tinggi cm "+
+        println(" lebar : $lebar cm"+
+                " tinggi : $tinggi cm "+
                 " panjang: $panjang cm ")
     }
 }
